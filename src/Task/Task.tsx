@@ -9,13 +9,9 @@ const Task: React.FC<ITaskProps> = props => {
 
     return (
         <div className="container">
-            <div className="text">
-                <div>
+            <div className="task">
                     <p>{props.text}</p>
-                </div>
-                <div>
                     <button onClick={(event) => props.onRemoveTask(event,props.id)}>удалить</button>
-                </div>
             </div>
         </div>
     );
